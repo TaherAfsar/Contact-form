@@ -1,0 +1,48 @@
+{% extends 'base.html' %} 
+{% block title %} 
+Contact Us
+ {% endblock title %} 
+ {%block body %}
+<div class="container-fluid my-4 mx-0">
+  <img src="/static/contact.avif" class=" img-fluid w-100 h-50" alt="...">
+</div>
+<div class="container">
+  <h1 class="text-center">Contact Us</h1>
+  <form method="post" action="/contact">
+    {% csrf_token %}
+    <div class="mb-3">
+        <label for="Name" class="form-label">Full Name</label>
+        <input name="name" type="Name" class="form-control" id="Name" />
+      </div>
+    <div class="mb-3">
+      <label for="Email" class="form-label">Email address</label>
+      <input
+      name="email"
+        type="email"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="email"
+      />
+      <div id="email" class="form-text">
+        We'll never share your email with anyone else.
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="PhoneNumber" class="form-label">Phone Number</label>
+      <input type="Phone" name="phone" class="form-control" id="Phone" />
+    </div>
+    <div class="mb-3">
+        <label for="desc" class="form-label">Tell me what you are here for</label>
+        <textarea class="form-control" id="desc" rows ="3" name="desc"></textarea>
+
+      </div>
+    {% comment %} <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div> {% endcomment %}
+   
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+{% endblock body %}
