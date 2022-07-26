@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-!avvo4p#ft6!e_pk)b)$a!3anw9ezhof_y4cl5v=sins_wrqn$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mycontactform.netlify.app']
+ALLOWED_HOSTS = ['mycontactforms.netlify.app']
 
 
 # Application definition
