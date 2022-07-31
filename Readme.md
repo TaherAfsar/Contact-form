@@ -1,4 +1,4 @@
-Steps to run thew code :
+Steps to run the code :
 open the directory in cmd
 install python
 pip install django 
